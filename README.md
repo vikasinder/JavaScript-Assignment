@@ -1,7 +1,7 @@
 # JavaScript-Assignment
 JavaScript Fundamentals are implemented in this project.
 
-["CSS Assignement Live"](https://vikasinder.github.io/Javascript-Assignement/)
+["Javascript Assignement Live"](https://vikasinder.github.io/JavaScript-Assignment/)
 
 
 ## Program To Calculate Sum / Divide / Maximum / Minimum 
