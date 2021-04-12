@@ -43,6 +43,7 @@ function clearForm() {
     document.getElementById("Name").innerText = "";
     document.getElementById("Mail").innerText = "";
     document.getElementById("Cmpladdress").innerText = "";
+    document.getElementById("cityProvince").innerText = "";
     document.getElementById("Membertype").innerText = "";
 
 }
