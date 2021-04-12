@@ -1,0 +1,125 @@
+<!Doctype Html>
+<html lang="en-CA">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>JS Assignment - Vikas Sharma</title>
+</head>
+
+<body>
+
+    <!--
+         body contains visilbe part of the page
+    
+    -->
+    <header id="head">
+
+
+        <nav id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home Page</a></li>
+
+
+                <li><a href="excel.html">Excel Page</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- wrapper class is used to wrap up all the body elements inside one single class -->
+
+
+    <div class="wrapper">
+
+
+
+        <!-- Main Section starts from Here -->
+
+        <main class="content">
+
+            <!-- Form submitted  -->
+
+            <form id="excel" name="mainForm-excel">
+
+                <!-- Required field validator is used on first name, last name and email with first name and last name has a max length of 25 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">NUMBERS MANUPLATION</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>
+                            <label for="”numbers">Please Enter Your Number Seprated By Spaces :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="numbers" name="numbers" autocomplete="off" size="40"
+                                placeholder="Enter Numbers Here" title="Please input number here with spaces" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <td colspan="2">
+                            <input type="radio" name="Calculate" value="Auto Sum" id="AutoSum" checked>
+                            <label for="Auto Sum">Auto Sum</label>
+                            <br>
+                            <input type="radio" name="Calculate" value="Average" id="Average">
+                            <label for="Average">Average</label>
+                            <br>
+                            <input type="radio" name="Calculate" value="Max" id="Max">
+                            <label for="Max">Max</label>
+                            <br>
+                            <input type="radio" name="Calculate" value="Min" id="Min">
+                            <label for="Min">Min</label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit" id="submit">Submit</button>
+
+                            <input type="reset" id="reset" value="Clear">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <div>Result :<span id="Result"></span></div>
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+
+        </main>
+
+
+        <footer id="footer">
+            <p>Copyright © 2021 Canadian Business College - Javascript assignment - created by: Vikas Sharma - All
+                rights reserved
+            </p>
+
+        </footer>
+
+
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+
+
+    </script>
+
+
+</body>
+
+</html>

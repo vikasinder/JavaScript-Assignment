@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+}
+/* All the HTML5 new elements (The semantic elements that are used in your html files) that you have
+used in your code should be displayed as block-level elements (for old browsers that don’t support
+them), so make sure to follow/add the rule for that */
+
+iframe,
+article,
+footer,
+header,
+nav,
+section,
+fieldset {
+    display: block;
+}
+/*
+The <body> element has to be styled with:
+a. Any colour you prefer for the text
+b. A background image, you can use any one from the 7 samples of dark-woodx.jpg. So, pick the
+one that reflects the colour of your website.
+▪ If no one matches your website colour, you can use Photoshop to change its colours
+▪ If you haven’t finished the Photoshop module, you will have no other choice just to pick one
+of the provided samples
+▪ Make sure to have only one background image which is the one that is used in your css code
+c. The font family (face) is at least 3 options of any sans-serif fonts
+d. Margin 0 for all the four sides (top, bottom, left, right)
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(5, 10, 10);
+    background-color: rgb(235, 248, 250);
+    margin: 0px;
+}
+/* The width value should be 950px
+b. 5px margin from top and bottom
+c. The div has to be aligned centered based in the browser window (about the left/right margins)
+d. Apply any background colour that you prefer */
+
+div.wrapper {
+    width: 950px;
+    /* Used to make website responsive */
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(195, 219, 221);
+}
+       /* Style any element with class value of “content”, in other word target the class named “content”:
+a. The line height (of the text) should be 1.4em
+b. 10px padding to all the sides
+ */
+        
+ .content {
+    line-height: 1.4em;
+    padding: 10px 10px 10px 10px;
+}
+/* Style the “header, nav, and footer” elements to share the following:
+a. Any Dark/Light background colour
+b. Any Dark/Light foreground colour (normal font colour) */
+
+header,
+nav,
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgb(224, 241, 241);
+    color: rgb(0, 34, 34);
+}
+/* Style the unordered list element <ul> which is inside <nav> element (styling only a ul child of any nav
+element */
+
+nav ul {
+    margin: 0px;
+    padding: 5px 5px 5px 5px;
+}
+/* Style the list items <li> of the main navigation (nav):
+a. To be displayed horizontally (Remember that <li> is a block-level element)
+b. Adding margin of 40px to the right of each list item
+c. All the navigation items should be displayed as Uppercase */
+
+nav#navigation ul li {
+    display: inline;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+/* Add the 4 pseudo classes effect to the anchor tags of the main navigation list items, the colour should
+be changed:
+a. The normal link
+b. The visited link
+c. The hover link
+d. The active link */
+
+nav#navigation ul li a:link {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-weight: bolder;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 10px;
+    width: 150px;
+    height: 120px;
+}
+
+nav#navigation ul li a:visited {
+    color: rgb(165, 42, 42);
+}
+
+nav#navigation ul li a:hover {
+    text-decoration: underline;
+    color: rgb(139, 0, 0);
+    background-color: rgb(255, 248, 220);
+}
+
+nav#navigation ul li a:active {
+    color: rgb(110, 108, 121);
+}
+/* Style any anchor <a> element:
+a. Any colour you like
+b. No underline */
+
+a:link {
+    text-decoration: none;
+    color: rgb(73, 0, 0);
+    font-weight: bolder;
+}
+
+/* Style the custom class named “img-centre”:
+a. Centre the image horizontally (Hint: don’t forget that <img> is an inline element so you will
+need to make it block level element first)
+b. Having margin of 5px from the top and bottom
+c. Having padding of 2px to all the sides */
+     
+     /* Table : a. The width is 800px
+b. Centre the table horizontally with 10px of margining from the top and bottom sides
+c. The table border has to be collapsed
+14. */
+        
+table {
+    border: 2px groove rgb(25, 32, 32);
+    width: 700px;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+/* Style both the <td> and <th> element of any table:
+a. Having a border with any settings you like
+b. Padding of 2px from the top/bottom and 5px from the left/right
+c. Any background colour (light/dark)
+15.  */
+
+td,
+th {
+    border: 2px ridge rgb(25, 32, 32);
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    background-color: rgb(40, 62, 78);
+    color: #ffffff;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* Style both the <th> inside any table and the <td> inside the <tfoot>:
+a. With Uppercase letters
+b. Any background colour (dark/light)
+c. Any colour (dark/light)  */
+
+thead th,
+tfoot td {
+    text-transform: uppercase;
+    background-color: rgb(224, 241, 241);
+    color: rgb(88, 8, 8);
+    text-align: center;
+}
+/* Style any <dt> element:
+a. Make it bold
+*/
+
+dt {
+    font-weight: bold;
+}
+/* Style any <footer> element:
+a. Change the font size to be 80% of the default font size or of the font size of the body
+b. Align your text to the centre of the table
+c. Add 1px of padding from the top/bottom and 0 from the right/left */
+
+footer {
+    text-align: center;
+    margin: auto;
+    padding: 1px 0px;
+    font-size: 80%;
+}
+/* Style any <iframe> element:
+a. Add margin of 10px for top/bottom
+b. Centre the iframe horizontally  */
+
+/* Style any <fieldset> element:
+a. Add width of 500px
+b. Add margin of 20px for top/bottom and centre the fieldset horizontally
+c. Add border with any style you prefer
+d. Add background colour */
+
+fieldset {
+    width: 500px;
+    margin: 20px auto;
+    border-style: groove;
+    background-color: rgb(40, 62, 78);
+    color: #ffffff;
+}
+/* Style any <legend> element:
+a. Italic font style
+b. Different front and background colour
+c. Margin of 0 from the top/bottom and 10px from the left/right
+d. Padding of 0 from top/bottom and 5px from the left/right
+e. Give it a rounded border with any size or setting you prefer */
+
+legend {
+    font-style: italic;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    background-color: rgb(14, 15, 15);
+    color: rgb(255, 248, 220);
+    border: solid 1px black;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+/* Style the <input> element that has an attribute named “type” with value of “submit”:
+a. Border with any style you like
+b. Padding of 5px for all the sides
+c. Any background colour you prefer
+d. Any colour you prefer */
+
+button[type="submit"],
+input[type="reset"] {
+    border: 2px solid rgb(29, 43, 43);
+    background-color: #4c9ed9;
+    color: #ffffff;
+    padding: 5px;
+}
+/* Style the same <input> element that has an attribute named “type” with value of “submit” but with
+the pseudo class for the hover state (when you hover the mouse over the element):
+a. Change its text colour and its background colour
+b. Change the mouse pointer to look like a hand (the normal mouse icon for a link): */
+
+button[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: rgb(52, 75, 75);
+    color: #beaaaa;
+    cursor: pointer;
+}

@@ -1,0 +1,179 @@
+<!Doctype Html>
+<html lang="en-CA">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>JS Assignment - Vikas Sharma</title>
+</head>
+
+<body>
+
+    <!--
+         body contains visilbe part of the page
+    
+    -->
+    <header id="head">
+
+
+        <nav id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home Page</a></li>
+
+
+                <li><a href="excel.html">Excel Page</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!-- wrapper class is used to wrap up all the body elements inside one single class -->
+
+
+    <div class="wrapper">
+
+
+
+        <!-- Main Section starts from Here -->
+
+        <main class="content">
+
+            <!-- Form submitted  -->
+
+
+            <form id="main-form" name="mainForm">
+
+                <!-- Required field validator is used on first name, last name and email with first name and last name has a max length of 25 -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Personal Information</th>
+                        </tr>
+                    </thead>
+
+                    <tr>
+                        <td>
+                            <label for="FirstName">First Name:*</label>
+                        </td>
+                        <td>
+                            <input type="text" id="First-Name" name="FirstName" autocomplete="off" maxlength="25"
+                                size="30" placeholder="First Name" onkeyup="" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="LastName">Last Name:*</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Last-Name" name="LastName" maxlength="25" autocomplete="off"
+                                size="30" placeholder="Last Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email Address:*</label>
+                        </td>
+                        <td>
+                            <input type="email" id="Email" name="Email" maxlength="35" size="40" autocomplete="off"
+                                required placeholder="characters@characters.domain">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Address">Address*</label>
+                        </td>
+                        <td>
+                            <input type="text" id="address" name="address" maxlength="35" autocomplete="off" size="40"
+                                placeholder="Address" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="City">City:*</label>
+                        </td>
+                        <td>
+                            <input type="text" id="city" name="city" maxlength="35" autocomplete="off" size="40"
+                                placeholder="City" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Province">Province:*</label>
+                        </td>
+                        <td>
+                            <input type="text" id="province" name="province" maxlength="35" autocomplete="off" size="40"
+                                placeholder="Province" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Choose Membership Type You Want ?</label><br>
+                        </td>
+                        <td>
+                            <input type="radio" name="Membership" checked value="Premium Membership"
+                                id="Premium Membership">
+                            <label for="Premium Membership">Premium Membership</label>
+                            <br>
+                            <input type="radio" name="Membership" value="Standard Membership" id="Standard Membership">
+                            <label for="Standard Membership">Standard Membership</label>
+                            <br>
+                            <input type="radio" name="Membership" value="Basic Membership" id="Basic Membership">
+                            <label for="Basic Membership">Basic Membership</label>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit" id="submit">Submit</button>
+                            <input type="reset" id="reset" value="Clear">
+                        </td>
+                    </tr>
+
+                </table>
+
+                <table>
+
+                    <tr>
+                        <td>
+                            <div>Full Name : <span id="Name"></span></div> <br>
+                            <div>Email : <span id="Mail"></span></div> <br>
+                            <div>Address : <span id="Cmpladdress"></span></div> <br>
+                            <div><span id="cityProvince"></span></div> <br>
+                            <div>Membership : <span id="Membertype"></span></div> <br>
+                        </td>
+
+                    </tr>
+                </table>
+            </form>
+
+        </main>
+
+
+        <footer id="footer">
+            <p>Copyright © 2021 Canadian Business College - Javascript assignment - created by: Vikas Sharma - All
+                rights reserved
+            </p>
+
+        </footer>
+
+
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+
+
+    </script>
+
+
+</body>
+
+</html>
