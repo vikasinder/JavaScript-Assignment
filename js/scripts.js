@@ -2,7 +2,7 @@
 let personalinfo = document.getElementById('main-form');
 
 /* If condition is put so as this codes fires only when the page gets loaded
-As event listner is giving Null Value Error */ 
+As event listner is giving Null Value Error */
 
 if (personalinfo) {
     personalinfo.addEventListener("submit", (e) => { e.preventDefault(); })
@@ -36,7 +36,7 @@ function userForm() {
     }
 
 }
-/* Function to clear the form values */ 
+/* Function to clear the form values */
 
 function clearForm() {
 
@@ -83,12 +83,12 @@ if (excelForm) {
     document.getElementById("reset").addEventListener("click", clearFormExcel);
     excelForm.addEventListener('focus', (event) => { event.target.style.background = '#D0D3D4'; }, true);
     excelForm.addEventListener('blur', (event) => { event.target.style.background = ''; }, true);
-  
+
 }
 function clearFormExcel() {
 
     document.getElementById("Result").innerText = "";
-  
+
 }
 function myExcelFuns() {
 
@@ -103,7 +103,7 @@ function myExcelFuns() {
 
         let answer = 0;
         let inputdataArr = numberStr.split(" ");
-      //  console.log(inputdataArr);
+        //  console.log(inputdataArr);
 
         let numericArr = [];
 
@@ -113,8 +113,14 @@ function myExcelFuns() {
                 numericArr.push(parseFloat(inputdataArr[i]));
             }
         }
-      //  console.log(numericArr);
 
+        //  Other way by using Map property of Array Object
+        // inputdataArr.map(function(value){
+        //     if(value!=""  && !isNaN(value))
+        //     {
+        //         numericArr.push(parseFloat(value));
+        //     }
+        // });
 
         if (document.getElementById("AutoSum").checked) {
 
@@ -163,5 +169,5 @@ function myExcelFuns() {
         document.getElementById("Result").innerText = "Please Enter What You Want To Calculate";
 
     }
-   
+
 }
